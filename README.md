@@ -71,3 +71,123 @@ Millions of people rely on sign language to communicate — yet resources to lea
 ---
 
 ## 📁 Folder Structure
+
+SignLearn/
+├── public/
+│   └── _redirects
+|
+├── src/
+│   ├── assets/
+│   │   ├── videos/
+│   │       ├── A.mp4
+│   │       ├── B.mp4
+│   │       └── ... 
+│   │       
+│   ├── components/
+│   │   ├──layout/
+│   │   |   ├── Footer.tsx
+│   │   |   ├── Header.tsx
+│   │   |   └── Layout.tsx
+|   |   |
+│   |   ├── learning/
+│   │   |     ├── CategorySelector.tsx
+|   |   |     ├── Dashboard.tsx
+│   │   |     ├── Dictionary.tsx
+│   │   |     ├── FinalPage.tsx
+│   │   |     ├── LearnMode.tsx
+|   |   |     ├── ModeSelector.tsx
+|   |   |     ├── PracticeMode.tsx
+|   |   |     ├── QuizMode.tsx
+|   |   |     ├── QuizResults.tsx
+|   |   |
+|   |   |
+|   |   ├── onboarding
+|   |   |      ├── Benefits.tsx 
+|   |   |      ├── GetStarted.tsx
+|   |   |      ├── GoalTime.tsx
+|   |   |      ├── Login.tsx
+|   |   |      ├── Signup.tsx
+|   |   |      ├── Welcome.tsx
+|   |   |      ├── WhyLearning.tsx
+|   |   |
+|   |   ├── ui
+|   |        ├── Button.tsx
+|   |        ├── Card.tsx
+|   |        ├── Input.tsx
+|   |        ├── Loader.tsx
+|   |   
+|   |   
+|   ├── context  
+|   |      ├── AuthContext.tsx
+|   |
+|   |
+|   ├── data
+|   |     ├── alphabetSigns.ts
+|   |     ├── quizQuestions.ts
+|   |     ├── wordSigns.ts
+|   |   
+|   |   
+|   ├── hooks
+|   |      ├── useLocalStorage.tsx
+|   |       
+|   ├── types 
+|   |       ├── index.ts
+|   |   
+│   │   
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── ...
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.js
+├── tailwind.config.js
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── README.md
+
+_
+
+## 🛠 How to Run Locally
+
+``bash
+# Clone the repo
+git clone https://github.com/your-username/signlearn.git
+cd signlearn
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+
+_
+
+🚀 Future Improvements
+Full-word sign recognition (not just letters)
+
+Daily streak tracking and rewards
+
+Backend integration for storing progress
+
+Dark mode and accessibility upgrades
+
+Multiplayer or peer learning feature
+
+—
+
+👥 Built With Love (and No Sleep)
+This project was designed, built, and deployed within 24 hours by a passionate team during a hackathon ❤‍🔥
+
+
+🔗 Live Demo: [Click here to view the deployed app] (https://project-signlearn.netlify.app/)
+
+—
+
+MIT License | © 2025 SignLearn Team
+
+—
