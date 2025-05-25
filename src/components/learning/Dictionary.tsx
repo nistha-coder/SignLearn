@@ -62,7 +62,7 @@ const Dictionary: React.FC = () => {
     }
   };
 
-  const commonWords = wordSigns.slice(0, 10);
+  const commonWords = wordSigns.slice(0, 11);
 
   return (
     <Layout>

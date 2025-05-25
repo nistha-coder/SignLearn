@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
-import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react';
+import {  ExternalLink } from 'lucide-react';
 import Layout from '../layout/Layout';
 import { alphabetSigns } from '../../data/alphabetSigns';
 import { AlphabetSign } from '../../types';
