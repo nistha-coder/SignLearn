@@ -93,7 +93,7 @@ const Login: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-8"
           >
-            <h1 className="text-3xl font-bold mb-3">Welcome Back</h1>
+            <h1 className="text-3xl font-bold mb-3">Welcome Back🎉</h1>
             <p className="text-gray-300">
               Log in to continue your sign language journey
             </p>
@@ -146,7 +146,7 @@ const Login: React.FC = () => {
                 variant="primary" 
                 type="submit" 
                 fullWidth 
-                icon={<LogIn size={18} />}
+                
               >
                 Log In
               </Button>

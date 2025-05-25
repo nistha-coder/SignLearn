@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
@@ -37,7 +37,7 @@ const LearnMode: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-8"
           >
-            <h1 className="text-3xl font-bold mb-3">Learn Alphabet Signs</h1>
+            <h1 className="text-3xl font-bold mb-3">Learn Alphabet Signs🔠</h1>
             <p className="text-gray-300">
               Study each sign and practice on your own
             </p>
@@ -106,9 +106,9 @@ const LearnMode: React.FC = () => {
               variant="outline" 
               onClick={handlePrevious}
               disabled={currentIndex === 0}
-              icon={<ArrowLeft size={18} />}
+             
             >
-              Previous
+              ← Previous
             </Button>
             
             <div className="text-center">
@@ -120,10 +120,10 @@ const LearnMode: React.FC = () => {
             <Button 
               variant="primary" 
               onClick={handleNext}
-              icon={<ArrowRight size={18} className="ml-2" />}
+              
               className="flex flex-row-reverse"
             >
-              {currentIndex < alphabetSigns.length - 1 ? 'Next' : 'Finish'}
+              {currentIndex < alphabetSigns.length - 1 ? 'Next →' : 'Finish →'}
             </Button>
           </div>
         </div>

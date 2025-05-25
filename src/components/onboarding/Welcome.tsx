@@ -1,8 +1,8 @@
-import React from 'react';
+// import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
-import { ArrowRight } from 'lucide-react';
+// import { ArrowRight } from 'lucide-react';
 import Layout from '../layout/Layout';
 
 const Welcome: React.FC = () => {
@@ -21,8 +21,8 @@ const Welcome: React.FC = () => {
             <h1 className="text-4xl font-bold mb-3 bg-gradient-to-r from-green-300 to-blue-700 bg-clip-text text-transparent">
               Welcome to SignLearn!
             </h1>
-            <p className="text-xl text-gray-300">
-              We're excited to help you learn sign language
+            <p className="text-lg text-gray-300">
+              Unlock the power of your hands — connect, communicate, and express like never before!
             </p>
           </motion.div>
 
@@ -34,12 +34,12 @@ const Welcome: React.FC = () => {
           >
             <div className="w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden">
               <img 
-                src="https://media.giphy.com/media/3o7TKNthed4OG7T5Je/giphy.gif" 
+                src="https://i.giphy.com/LY8yDak6Tngb6FfPrt.webp" 
                 alt="Animated Hand Waving" 
                 className="w-full h-full object-cover"
               />
             </div>
-            <p className="text-gray-300">
+            <p className="text-gray-300 italic">
               Sign language opens up a whole new world of communication and connection. 
               Let's start this journey together!
             </p>
@@ -53,10 +53,9 @@ const Welcome: React.FC = () => {
             <Button 
               variant="primary" 
               onClick={() => navigate('/onboarding/why-learning')}
-              icon={<ArrowRight size={18} />}
-              className="px-8"
-            >
-              Next
+              // icon={<ArrowRight size={18} />}
+              // className="px-8"
+            >→ Next
             </Button>
           </motion.div>
         </div>

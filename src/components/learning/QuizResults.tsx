@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
@@ -84,7 +84,7 @@ const QuizResults: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-8"
           >
-            <h1 className="text-3xl font-bold mb-3">Quiz Results</h1>
+            <h1 className="text-3xl font-bold mb-3">Quiz Results🏆</h1>
             <p className={`text-xl font-medium ${messageColor}`}>
               {message}
             </p>
@@ -148,19 +148,19 @@ const QuizResults: React.FC = () => {
               <Button 
                 variant="outline" 
                 onClick={handleRetakeQuiz}
-                icon={<RefreshCcw size={18} />}
+                
                 className="sm:w-1/2"
               >
-                Retake Quiz
+                ↻ Retake Quiz
               </Button>
               
               <Button 
                 variant="primary" 
                 onClick={handleContinue}
-                icon={<ArrowRight size={18} className="ml-2" />}
+                
                 className="sm:w-1/2 flex flex-row-reverse justify-center"
               >
-                Continue
+                Continue →
               </Button>
             </div>
           </motion.div>

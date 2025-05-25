@@ -47,8 +47,8 @@ const WhyLearning: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-10"
           >
-            <h1 className="text-3xl font-bold mb-3">Why are you learning sign language?</h1>
-            <p className="text-gray-300">
+            <h1 className="text-3xl font-bold mb-3">Why are you learning sign language❓</h1>
+            <p className="text-gray-300 italic">
               This helps us personalize your learning experience
             </p>
           </motion.div>
@@ -87,10 +87,9 @@ const WhyLearning: React.FC = () => {
             <Button 
               variant="primary" 
               onClick={handleNext}
-              icon={<ArrowRight size={18} />}
-              className="px-8"
+             
             >
-              Next
+             → Next
             </Button>
           </motion.div>
         </div>

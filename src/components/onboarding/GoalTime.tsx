@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
 import Card from '../ui/Card';
-import { ArrowRight, Clock } from 'lucide-react';
+import {  Clock } from 'lucide-react';
 import Layout from '../layout/Layout';
 import useLocalStorage from '../../hooks/useLocalStorage';
 import { GoalTimeMinutes, UserPreferences } from '../../types';
@@ -42,8 +42,8 @@ const GoalTime: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-10"
           >
-            <h1 className="text-3xl font-bold mb-3">Set Your Daily Goal</h1>
-            <p className="text-gray-300">
+            <h1 className="text-3xl font-bold mb-3">Set Your Daily Goal⏳</h1>
+            <p className="text-gray-300 italic">
               How much time can you dedicate to learning sign language each day?
             </p>
           </motion.div>
@@ -94,10 +94,9 @@ const GoalTime: React.FC = () => {
             <Button 
               variant="primary" 
               onClick={handleNext}
-              icon={<ArrowRight size={18} />}
-              className="px-8"
+              
             >
-              Next
+              → Next
             </Button>
           </motion.div>
         </div>

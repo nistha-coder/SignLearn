@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
@@ -99,9 +99,9 @@ const Dashboard: React.FC = () => {
             className="mb-8"
           >
             <h1 className="text-3xl font-bold mb-2">
-              Welcome back, {user?.name || 'Learner'}!
+              Welcome back, {user?.name || 'Learner'}😊
             </h1>
-            <p className="text-gray-300">
+            <p className="text-gray-300 italic">
               Track your progress and continue your sign language journey
             </p>
           </motion.div>
@@ -115,7 +115,9 @@ const Dashboard: React.FC = () => {
             >
               <Card className="h-full">
                 <div className="flex flex-col h-full">
-                  <h2 className="text-xl font-semibold mb-4">Daily Goal</h2>
+                  <h2 className="text-xl font-semibold mb-4">Daily Goal:
+
+🎯</h2>
                   <div className="flex flex-col items-center justify-center flex-grow py-6">
                     <div className="w-48 h-48 relative mb-6 flex items-center justify-center">
                       <svg className="w-full h-full" viewBox="0 0 100 100">
@@ -177,7 +179,7 @@ const Dashboard: React.FC = () => {
             >
               <Card className="h-full">
                 <div className="flex flex-col h-full">
-                  <h2 className="text-xl font-semibold mb-4">Your Progress</h2>
+                  <h2 className="text-xl font-semibold mb-4">📈Your Progress:</h2>
                   <div className="flex-grow flex flex-col justify-between">
                     <div className="space-y-4">
                       <ProgressBar label="Alphabets" progress={12} count="3/26" />
@@ -189,9 +191,9 @@ const Dashboard: React.FC = () => {
                         variant="primary"
                         fullWidth
                         onClick={handleContinueLearning}
-                        icon={<Play size={18} />}
+                        
                       >
-                        Continue Learning
+                       🚀 Continue Learning
                       </Button>
                     </div>
                   </div>

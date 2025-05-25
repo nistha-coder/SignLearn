@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
@@ -22,10 +22,18 @@ const GetStarted: React.FC = () => {
               <HandMetal size={80} className="text-primary" />
             </div>
             <h1 className="text-4xl font-bold mb-2 text-white">SignLearn</h1>
-            <p className="text-xl text-gray-300 mb-8">
-              Learn sign language the fun and interactive way
+            <p className="text-xl text-gray-300 mb-7 italic">
+              Speak with Your Hands – The Fun Way to Learn Sign Language!
             </p>
           </motion.div>
+
+            <div className="w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden">
+  <img
+    src="https://media.giphy.com/media/bcKmIWkUMCjVm/giphy.gif"
+    alt="Animated Hand Waving"
+    className="w-full h-full object-cover"
+  />
+</div>
 
           <motion.div
             initial={{ y: 20, opacity: 0 }}

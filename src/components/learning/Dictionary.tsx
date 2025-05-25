@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
@@ -74,7 +74,7 @@ const Dictionary: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-8"
           >
-            <h1 className="text-3xl font-bold mb-3">Sign Language Dictionary</h1>
+            <h1 className="text-3xl font-bold mb-3">Sign Language Dictionary📖</h1>
             <p className="text-gray-300">
               Look up signs for alphabets and common words
             </p>

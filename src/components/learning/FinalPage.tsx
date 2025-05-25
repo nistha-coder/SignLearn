@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
@@ -79,19 +79,19 @@ const FinalPage: React.FC = () => {
               <Button 
                 variant="outline" 
                 onClick={handleRestart}
-                icon={<RefreshCw size={18} />}
+                
                 className="sm:w-1/2"
               >
-                Start Again
+               ⟳ Start Again
               </Button>
               
               <Button 
                 variant="primary" 
                 onClick={() => navigate('/dashboard')}
-                icon={<Home size={18} />}
+               
                 className="sm:w-1/2"
               >
-                Dashboard
+                🏠︎ Dashboard
               </Button>
             </div>
           </motion.div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
@@ -81,7 +81,7 @@ const QuizMode: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-8"
           >
-            <h1 className="text-3xl font-bold mb-3">Alphabet Signs Quiz</h1>
+            <h1 className="text-3xl font-bold mb-3">Alphabet Signs Quiz📝</h1>
             <p className="text-gray-300">Test your knowledge of sign language alphabets</p>
           </motion.div>
 
@@ -160,9 +160,9 @@ const QuizMode: React.FC = () => {
                     variant="primary"
                     onClick={handleNext}
                     className="w-full"
-                    icon={<ArrowRight size={18} className="ml-2" />}
+                    
                   >
-                    {currentQuestionIndex < shuffledQuestions.length - 1 ? 'Next Question' : 'See Results'}
+                    {currentQuestionIndex < shuffledQuestions.length - 1 ? '→ Next Question' : '→ See Results'}
                   </Button>
                 )}
               </div>

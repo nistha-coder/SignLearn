@@ -1,8 +1,8 @@
-import React from 'react';
+// import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
-import { ArrowRight, Brain, Globe, Heart, Users } from 'lucide-react';
+import {  Brain, Globe, Heart, Users } from 'lucide-react';
 import Layout from '../layout/Layout';
 
 const benefits = [
@@ -12,7 +12,7 @@ const benefits = [
     description: 'Connect with the deaf and hard-of-hearing community directly.',
   },
   {
-    icon: <Brain size={32} className="text-teal-500" />,
+    icon: <Brain size={32} className="text-teal-500 " />,
     title: 'Cognitive Benefits',
     description: 'Improve your spatial awareness and memory capabilities.',
   },
@@ -60,8 +60,8 @@ const Benefits: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-10"
           >
-            <h1 className="text-3xl font-bold mb-3">Benefits of Learning Sign Language</h1>
-            <p className="text-gray-300">
+            <h1 className="text-3xl font-bold mb-3">Benefits of Learning Sign Language🌟</h1>
+            <p className="text-gray-300 italic">
               Discover how sign language can enrich your life and benefit society
             </p>
           </motion.div>
@@ -80,7 +80,7 @@ const Benefits: React.FC = () => {
               >
                 <div className="mb-4">{benefit.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
-                <p className="text-gray-300">{benefit.description}</p>
+                <p className="text-gray-300 italic">{benefit.description}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -94,10 +94,9 @@ const Benefits: React.FC = () => {
             <Button 
               variant="primary" 
               onClick={() => navigate('/onboarding/goal-time')}
-              icon={<ArrowRight size={18} />}
-              className="px-8"
+              
             >
-              Next
+              → Next
             </Button>
           </motion.div>
         </div>

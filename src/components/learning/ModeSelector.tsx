@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
@@ -60,7 +59,7 @@ const ModeSelector: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-10"
           >
-            <h1 className="text-3xl font-bold mb-3">Choose a Learning Mode</h1>
+            <h1 className="text-3xl font-bold mb-3">Choose a Learning Mode🧠</h1>
             <p className="text-gray-300">
               Select how you want to learn {preferences.selectedCategory}
             </p>

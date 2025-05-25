@@ -1,4 +1,4 @@
-import React from 'react';
+// from 'react';
 import { Github, Heart } from 'lucide-react';
 
 const Footer: React.FC = () => {

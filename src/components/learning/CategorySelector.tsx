@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
@@ -60,7 +60,7 @@ const CategorySelector: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-10"
           >
-            <h1 className="text-3xl font-bold mb-3">Choose a Category</h1>
+            <h1 className="text-3xl font-bold mb-3">Choose a Category📋</h1>
             <p className="text-gray-300">
               Select what you'd like to learn today
             </p>

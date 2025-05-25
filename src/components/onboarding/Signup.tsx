@@ -99,7 +99,7 @@ const Signup: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-8"
           >
-            <h1 className="text-3xl font-bold mb-3">Create Your Account</h1>
+            <h1 className="text-3xl font-bold mb-3">Create Your Account🧑‍💻</h1>
             <p className="text-gray-300">
               Join SignLearn to start your sign language journey
             </p>
