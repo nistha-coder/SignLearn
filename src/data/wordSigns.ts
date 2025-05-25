@@ -9,7 +9,7 @@ import Hello from '../assests/videos/Hello.mp4';
 import good from '../assests/videos/good.mp4';
 import friend from '../assests/videos/friend.mp4';
 import no from '../assests/videos/no.mp4';
-
+import Father from '../assests/videos/father.mp4';
 
 export const wordSigns = [
   {
@@ -61,5 +61,10 @@ export const wordSigns = [
     word: 'Friend',
     meaning: 'A person with whom one has a bond of mutual affection',
     gifUrl: friend,
+  },
+  {
+    word: 'Father',
+meaning: 'A male parent or caregiver who raises and supports a child',
+gifUrl: Father,
   },
 ];
